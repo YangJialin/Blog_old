@@ -4,9 +4,9 @@ import com.gallin.blog.dao.LoginDao;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 public class LoginDaoImpl implements LoginDao {
-    private SqlSessionFactory sessionFatory;
+    private SqlSessionFactory sqlSessionFactory;
 
-    public void setSessionFatory(SqlSessionFactory sessionFatory) {
-        this.sessionFatory = sessionFatory;
+    public void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {
+        this.sqlSessionFactory = sqlSessionFactory;
     }
 }

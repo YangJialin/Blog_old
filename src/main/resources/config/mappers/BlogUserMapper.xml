@@ -83,12 +83,6 @@
     delete from t_blog_user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.gallin.blog.entity.BlogUserExample">
-    delete from t_blog_user
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </delete>
   <insert id="insert" parameterType="com.gallin.blog.entity.BlogUser">
     insert into t_blog_user (id, user_login, user_pass, 
       user_nicename, user_email, user_url, 
