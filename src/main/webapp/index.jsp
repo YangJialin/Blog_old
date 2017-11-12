@@ -89,7 +89,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 mt-3">
-                <p class="text-center text-white">© Copyright 2017 Pingendo - All rights reserved. </p>
+                <p class="text-center text-white">© Copyright 2017 <<a href="/pages/login.jsp">Gallin</a> - All rights reserved. </p>
             </div>
         </div>
     </div>
