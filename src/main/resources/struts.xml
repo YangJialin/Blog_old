@@ -13,8 +13,12 @@
 
     <package name="default" namespace="/" extends="struts-default">
         <!--demo-->
-        <action name="login" class="com.gallin.blog.controller.DoLoginAction" method="execute">
-            <result name="login">/WEB-INF/pages/login.jsp</result>
+        <action name="loginName" class="com.gallin.blog.controller.DoLoginAction" method="loginName">
+            <result name="login">/WEB-INF/admin/loginName.jsp</result>
+            <result name="success">/WEB-INF/admin/loginPass.jsp</result>
+        </action>
+        <action name="loginConfirm" class="com.gallin.blog.controller.DoLoginAction" method="dologin">
+            <result name="login">/WEB-INF/admin/loginPass.jsp</result>
             <result name="success">/index.jsp</result>
         </action>
     </package>

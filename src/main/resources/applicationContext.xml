@@ -18,11 +18,11 @@
 
     <!--Service-->
     <bean id="loginService" class="com.gallin.blog.service.impl.LoginServiceImpl">
-        <property name="loginDao" ref="loginDao"/>
+        <property name="blogUserDao" ref="blogUserDao"/>
     </bean>
 
     <!--Dao-->
-    <bean id="loginDao" class="com.gallin.blog.dao.impl.LoginDaoImpl">
+    <bean id="blogUserDao" class="com.gallin.blog.dao.impl.BlogUserDaoImpl">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 

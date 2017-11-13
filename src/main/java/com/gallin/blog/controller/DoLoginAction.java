@@ -1,7 +1,8 @@
 package com.gallin.blog.controller;
 
 import com.gallin.blog.controller.form.UserFrom;
-import com.gallin.blog.service.impl.LoginServiceImpl;
+import com.gallin.blog.entity.BlogUser;
+import com.gallin.blog.service.LoginService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class DoLoginAction extends ActionSupport {
@@ -10,7 +11,7 @@ public class DoLoginAction extends ActionSupport {
     //页面用from
     private UserFrom user;
     //loginService
-    private LoginServiceImpl loginService;
+    private LoginService loginService;
 
     /**
      *
@@ -32,13 +33,29 @@ public class DoLoginAction extends ActionSupport {
      *
      * @param loginService
      */
-    public void setLoginService(LoginServiceImpl loginService) {
+    public void setLoginService(LoginService loginService) {
         this.loginService = loginService;
     }
 
     @Override
     public String execute() throws Exception {
-        System.out.println(this.user.getEmail());
+
+        return SUCCESS;
+    }
+
+    public String loginName() throws Exception{
+
+        BlogUser blogUser = this.loginService.selectByEmail(user.getEmail());
+        if (blogUser!=null){
+            this.user.setUsername(blogUser.getUserNicename());
+            this.user.setEmail(blogUser.getUserEmail());
+            return SUCCESS;
+        }
+        addActionError("用户名不存在");
+        return LOGIN;
+    }
+    public String dologin() throws Exception{
+
         return SUCCESS;
     }
 }

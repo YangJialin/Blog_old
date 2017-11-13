@@ -1,13 +1,21 @@
 package com.gallin.blog.service.impl;
 
-import com.gallin.blog.dao.impl.LoginDaoImpl;
+import com.gallin.blog.dao.BlogUserDao;
+import com.gallin.blog.entity.BlogUser;
 import com.gallin.blog.service.LoginService;
 
 public class LoginServiceImpl implements LoginService{
 
-    private LoginDaoImpl loginDao;
+    private BlogUserDao blogUserDao;
 
-    public void setLoginDao(LoginDaoImpl loginDao) {
-        this.loginDao = loginDao;
+
+    public void setBlogUserDao(BlogUserDao blogUserDao) {
+        this.blogUserDao = blogUserDao;
+    }
+
+
+    public BlogUser selectByEmail(String email){
+        BlogUser user  = this.blogUserDao.selectByEmail(email);
+        return user;
     }
 }
