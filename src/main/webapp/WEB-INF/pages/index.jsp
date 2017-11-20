@@ -78,8 +78,8 @@
                                         </div>
                                         <div class="card-footer text-muted">
                                             <div class="float-left">2017/11/11</div>
-                                            <div class="float-right">阅读（）</div>
-                                            <div class="float-right">评论（）</div>
+                                            <div class="float-right">阅读（3）</div>
+                                            <div class="float-right">评论（4）</div>
                                         </div>
                                     </div>
                                 </div>
@@ -99,8 +99,8 @@
                                         </div>
                                         <div class="card-footer text-muted">
                                             <div class="float-left">2017/11/11</div>
-                                            <div class="float-right">阅读（）</div>
-                                            <div class="float-right">评论（）</div>
+                                            <div class="float-right">阅读（1）</div>
+                                            <div class="float-right">评论（2）</div>
                                         </div>
                                     </div>
                                 </div>
