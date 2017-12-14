@@ -21,5 +21,9 @@
             <result name="login">/WEB-INF/admin/loginPass.jsp</result>
             <result name="success">/index.jsp</result>
         </action>
+        <action name="post" class="com.gallin.blog.controller.PostAction" method="getPost">
+            <result name="success">/WEB-INF/pages/post.jsp</result>
+            <result name="error">/index.jsp</result>
+        </action>
     </package>
 </struts>

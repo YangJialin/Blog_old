@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
           crossorigin="anonymous">
+    <title>博客首页</title>
 </head>
 
 <body>
@@ -30,20 +31,20 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav justify-content-end">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home
+                <a class="nav-link" href="#">首页
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">全部文章</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">开源图书</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
+                    关于
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Action</a>
@@ -81,20 +82,20 @@
                             <a class="nav-link" href="#">最多评论</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">type4</a>
+                            <a class="nav-link" href="#">Java</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">type5</a>
+                            <a class="nav-link" href="#">MySQL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">type6</a>
+                            <a class="nav-link" href="#">Linux</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">type7</a>
+                            <a class="nav-link" href="#">数据结构</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                               aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                               aria-haspopup="true" aria-expanded="false">更多</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">type1</a>
                                 <a class="dropdown-item" href="#">type1</a>
@@ -141,7 +142,8 @@
                 <div class="col-md-12 my-3">
                     <div class="card">
                         <img class="card-img-top"
-                             src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15fd9d9fd4e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15fd9d9fd4e%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.01666641235352%22%20y%3D%2297.5%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                             <%--src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15fd9d9fd4e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15fd9d9fd4e%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.01666641235352%22%20y%3D%2297.5%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"--%>
+                             src="/img/img-1.jpg"
                              alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title">我是标题</h4>
@@ -150,7 +152,7 @@
                             <span class="badge badge-info">标签3</span>
                             <p class="card-text">
                                 内容概览一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
-                            <a href="#" class=" btn btn-outline-primary float-right">继续阅读</a>
+                            <a href="post.action" class=" btn btn-outline-primary float-right">继续阅读</a>
                         </div>
                         <div class="card-footer text-muted">
                             <div class="float-left">
@@ -189,19 +191,17 @@
             </div>
             <div class="card">
 
-                <img class="card-img-top" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
+                <img class="card-img-top" src="/img/head.jpg">
                 <div class="card-body">
                     <h4>Gallin</h4>
-                    <h6 class="text-muted">Subtitle</h6>
+                    <h6 class="text-muted">keep coding and carry on.</h6>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link fa fa-address-card-o">关于博主</a>
+                    <a href="#" class="card-link fa fa-github">Github</a>
                 </div>
             </div>
             <hr>
@@ -237,12 +237,8 @@
                     <i class="fa fa-hand-spock-o fa-5x"></i>
                     <h3 class="mb-4">Gallin</h3>
                 </div>
-                <div class="p-4 col-md-7">
-                    <h3 class="mb-4">XXXX</h3>
-                    <p>"
-                        <i>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</i>" &nbsp; &nbsp; &nbsp;
-                        &nbsp; &nbsp; &nbsp;&nbsp;
-                    </p>
+                <div class="p-4 col-md-8">
+                    <h4 class="p-5 mb-4">"<i>Stay hungry、stay foolish.</i>"</h4>
                 </div>
             </div>
             <div class="row">
