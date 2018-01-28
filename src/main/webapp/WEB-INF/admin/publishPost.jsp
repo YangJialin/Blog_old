@@ -212,14 +212,14 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         <span class="pull-right-container">
             </span>
                     </a>
                 </li>
-                <li class="treeview">
+                <li class="treeview  active">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
                         <span>博文</span>
@@ -229,7 +229,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i>全部文章</a></li>
-                        <li><a href="/admin/toPublishPost"><i class="fa fa-circle-o"></i> 发布</a></li>
+                        <li><a href="/fabu.jsp"><i class="fa fa-circle-o"></i> 发布</a></li>
                         <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> 分类管理</a></li>
                         <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i>标签管理</a></li>
                     </ul>
@@ -369,13 +369,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Blank page
-                <small>it all starts here</small>
+                发布文章
+                <small>码字吧</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Examples</a></li>
-                <li class="active">Blank page</li>
+                <li><a href="#">博文</a></li>
+                <li class="active">发布</li>
             </ol>
         </section>
 

@@ -12,18 +12,25 @@
     <constant name="struts.configuration.xml.reload" value="true"></constant>
 
     <package name="default" namespace="/" extends="struts-default">
-        <!--demo-->
-        <action name="loginName" class="com.gallin.blog.controller.DoLoginAction" method="loginName">
-            <result name="login">/WEB-INF/admin/loginName.jsp</result>
-            <result name="success">/WEB-INF/admin/loginPass.jsp</result>
-        </action>
-        <action name="loginConfirm" class="com.gallin.blog.controller.DoLoginAction" method="dologin">
-            <result name="login">/WEB-INF/admin/loginPass.jsp</result>
-            <result name="success">/index.jsp</result>
-        </action>
         <action name="post" class="com.gallin.blog.controller.PostAction" method="getPost">
             <result name="success">/WEB-INF/pages/post.jsp</result>
-            <result name="error">/index.jsp</result>
+            <result name="error">WEB-INF/pages/index.jsp</result>
+        </action>
+        <action name="admin">
+            <result>/WEB-INF/admin/login.jsp</result>
+        </action>
+    </package>
+    <package name="admin" namespace="/admin" extends="struts-default">
+        <action name="login" class="com.gallin.blog.controller.DoLoginAction" method="loginName">
+            <result name="login">/WEB-INF/admin/login.jsp</result>
+            <result name="success">/WEB-INF/admin/loginConfirm.jsp</result>
+        </action>
+        <action name="loginConfirm" class="com.gallin.blog.controller.DoLoginAction" method="dologin">
+            <result name="login">/WEB-INF/admin/loginConfirm.jsp</result>
+            <result name="success">/WEB-INF/admin/dashboard.jsp</result>
+        </action>
+        <action name="toPublishPost" class="com.gallin.blog.controller.PostAction" method="toPublish">
+            <result name="success">/WEB-INF/admin/publishPost.jsp</result>
         </action>
     </package>
 </struts>

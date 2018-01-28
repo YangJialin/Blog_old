@@ -35,8 +35,8 @@ To change this template use File | Settings | File Templates.
               </div>
               <h2 class="">输入密码 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <br> </h2>
-              <s:form action="loginConfirm" name="user" method="post">
-                <div class="form-group"> <label>密码<br></label>
+              <s:form action="/admin/loginConfirm" name="user" method="post">
+                <div class="form-group">
                   <input type="password" name="user.password" class="form-control" placeholder="Password">
                   <br>
                   <button type="button" onclick="window.history.back()" class="btn btn-lg btn-secondary  style button-style1 mx-3" data-toggle="" id="button-prv">上一步</button>

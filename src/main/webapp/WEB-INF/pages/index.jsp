@@ -64,7 +64,7 @@
                         <div class="input-group my-1 w-50">
                             <input type="text" class="form-control mr-3 text-left" placeholder="搜索"
                                    id="inlineFormInputGroup"></div>
-                        <button type="submit" class="btn btn-outline-success">检 索
+                        <button type="submit" class="btn btn-outline-success">搜索
                             <br></button>
                     </form>
                 </div>

@@ -36,7 +36,7 @@ To change this template use File | Settings | File Templates.
               <h1 class="mb-4">登陆
                 <br>
               </h1>
-              <s:form action="loginName" name="user" method="post">
+              <s:form action="/admin/login" name="user" method="post">
                 <div class="form-group"> <label>邮箱</label>
                   <input type="email" name="user.email" class="form-control" placeholder="Enter email">
                     <s:if test="hasActionErrors()">
@@ -45,7 +45,7 @@ To change this template use File | Settings | File Templates.
                         </div>
                     </s:if>
                 </div>
-                <button type="submit" class="btn btn-block btn-lg btn-primary" data-toggle="">下一步<br>
+                <button id="loginBtn" type="submit" class="btn btn-block btn-lg btn-primary"  data-loading-text="<i class='fa fa-spinner fa-spin '></i>">下一步<br>
                 </button>
               </s:form>
             </div>
@@ -55,9 +55,19 @@ To change this template use File | Settings | File Templates.
       <div class="row"></div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('#loginBtn').on('click', function() {
+        var $this = $(this);
+        $this.button('loading');
+        setTimeout(function() {
+            $this.button('reset');
+        }, 8000);
+    });
+</script>
 </html>

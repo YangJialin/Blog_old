@@ -8,4 +8,8 @@ public class PostAction extends ActionSupport {
 
         return SUCCESS;
     }
+
+    public String toPublish() throws Exception{
+        return SUCCESS;
+    }
 }
